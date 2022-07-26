@@ -8,3 +8,4 @@ In each content, redirection will lead to a new page related to specific operati
 
 Be sure to create some items before doing other operations, otherwise, the page is empty. 
 Meanwhile, please MySql should be set up in advance in order to make the crud system work properly. 
+Specific info on MySql configuration is in mysql_database.py.
