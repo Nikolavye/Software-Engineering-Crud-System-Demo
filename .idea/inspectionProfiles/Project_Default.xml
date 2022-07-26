@@ -1,0 +1,43 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="JSHint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="object.first_name" />
+          <option value="object.last_name" />
+          <option value="object.first_name_female" />
+          <option value="object.first_name_male" />
+          <option value="object.name" />
+          <option value="object.job" />
+          <option value="object.address" />
+          <option value="object.city" />
+          <option value="object.country" />
+          <option value="object.country_code" />
+          <option value="object.postcode" />
+          <option value="object.street_address" />
+          <option value="object.street_name" />
+          <option value="object.street_number" />
+          <option value="object.street_suffix" />
+          <option value="str.__pos__" />
+          <option value="object.check" />
+          <option value="object.check_string_numerical_datatypes" />
+          <option value="object.check_string_datatypes" />
+          <option value="object.check_numerical_datatypes" />
+          <option value="great_expectations.dataset" />
+          <option value="great_expectations.from_pandas" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

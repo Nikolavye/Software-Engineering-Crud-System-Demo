@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Items</title>
+</head>
+<body>
+<h1>All Items</h1>
+<table border=1 id="allitemstable">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>quantity</th>
+        <th>price</th>
+        <td colspan="2">edit</td>
+    </tr>
+    {% for item in items %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price }}</td>
+            <td><a href="/singleitem/{{ item["id"] }}">Update</a></td>
+            <td><a href="/deleteitem/{{ item["id"] }}">Delete</a></td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

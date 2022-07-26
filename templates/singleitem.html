@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>single item</title>
+</head>
+<body>
+    <table border="1" id="singleitemtable">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>quantity</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>{{ item['id']}}</td>
+            <td>{{ item['name']}}</td>
+            <td>{{ item['quantity']}}</td>
+            <td>{{ item['price']}}</td>
+        </tr>
+    </table>
+
+<br>
+    <div>
+        <form action="/updateitem/{{ item["id"] }}" method="post">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="items_name"></td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td><input type="number" name="items_quantity"></td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td><input type="number" name="items_price"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="items_update" value="update"></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+
+</body>
+</html>
